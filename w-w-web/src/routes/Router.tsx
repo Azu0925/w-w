@@ -4,7 +4,7 @@ import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
 import Question from '../pages/Question'
 
-const path = process.env.NODE_ENV === 'production' ? './w-w' : ''
+const path = process.env.NODE_ENV === 'production' ? '/w-w' : ''
 const Router = (): JSX.Element => {
   return (
     <BrowserRouter>
