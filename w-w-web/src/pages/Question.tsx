@@ -6,7 +6,9 @@ const Question = (): JSX.Element => {
       <h3>第問</h3>
       <p></p>
       <ul>
-        <li><button></button></li>
+        <li>
+          <button></button>
+        </li>
       </ul>
     </main>
   )
