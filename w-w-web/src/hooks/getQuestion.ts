@@ -9,6 +9,7 @@ const useGetQuestion = () => {
   useEffect(() => {
     axios.get(url).then((res) => {
       setQuestion(res.data)
+      console.log(res.data)
     })
   })
 
