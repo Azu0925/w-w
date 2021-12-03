@@ -5,6 +5,7 @@ import getQuestionState from '../selectors/getQuestionState'
 let counter = 0
 const Question = (): JSX.Element => {
   const question = useRecoilValue(getQuestionState)
+  if(!question) null
 
   return (
     <main>
