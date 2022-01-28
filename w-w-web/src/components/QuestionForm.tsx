@@ -13,9 +13,7 @@ const useStyles = makeStyles({
 const QuestionForm = (): JSX.Element | null => {
   const classes = useStyles()
   const question = useRecoilValue(getQuestionState)
-  if (!question) {
-    return null
-  }
+  if (!question) null
 
   return (
     <section>
@@ -23,7 +21,7 @@ const QuestionForm = (): JSX.Element | null => {
       <ul>
         {question.answerList.map((choice, index) => (
           <li key={index}>
-            <AnswerChoiceButton name={choice} />
+            <AnswerChoiceButton name={choice} key={index} />
           </li>
         ))}
       </ul>
