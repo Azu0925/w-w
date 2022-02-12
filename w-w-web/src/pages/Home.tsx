@@ -15,7 +15,7 @@ const Home = (): JSX.Element => {
   const classes = useStyles()
   const history = useHistory()
   const start = useCallback(() => {
-    history.push('/question')
+    history.push('/question/1')
   }, [])
 
   return (

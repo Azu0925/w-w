@@ -10,7 +10,7 @@ const Router = (): JSX.Element => {
     <BrowserRouter>
       <Switch>
         <Route exact path={path + '/'} component={Home} />
-        <Route exact path={path + '/question'} component={Question} />
+        <Route exact path={path + '/question/:questionNumber'} component={Question} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>

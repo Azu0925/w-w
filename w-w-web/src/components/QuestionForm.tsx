@@ -1,6 +1,7 @@
 import { makeStyles } from '@mui/styles'
 import React from 'react'
-import { useRecoilValue } from 'recoil'
+import { useRecoilValue, useSetRecoilState } from 'recoil'
+import answerResultsState from '../atoms/answerResults'
 import getQuestionState from '../selectors/getQuestionState'
 import AnswerChoiceButton from './AnswerChoiceButton'
 
@@ -12,7 +13,9 @@ const useStyles = makeStyles({
 
 const QuestionForm = (): JSX.Element | null => {
   const classes = useStyles()
+  const setAnswerResults = useSetRecoilState(answerResultsState)
   const question = useRecoilValue(getQuestionState)
+  setAnswerResults([question])
   if (!question) null
 
   return (
@@ -21,7 +24,7 @@ const QuestionForm = (): JSX.Element | null => {
       <ul>
         {question.answerList.map((choice, index) => (
           <li key={index}>
-            <AnswerChoiceButton name={choice} key={index} />
+            <AnswerChoiceButton name={choice} id={index} />
           </li>
         ))}
       </ul>

@@ -1,6 +1,6 @@
 export type answerResult = {
   question: string
   answerList: string[]
-  answer: number
+  answerNumber: number
   userAnswer: number
 }
