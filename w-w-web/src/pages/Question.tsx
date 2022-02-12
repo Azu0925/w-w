@@ -1,5 +1,6 @@
 import { makeStyles } from '@mui/styles'
 import React, { Suspense } from 'react'
+import AnswerResult from '../components/AnswerResult'
 import QuestionForm from '../components/QuestionForm'
 
 const useStyles = makeStyles({
@@ -18,6 +19,7 @@ const Question = (): JSX.Element => {
       <Suspense fallback={<p>Loading...</p>}>
         <QuestionForm />
       </Suspense>
+      <AnswerResult />
     </main>
   )
 }
