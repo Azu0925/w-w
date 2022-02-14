@@ -17,7 +17,8 @@ const AnswerChoiceButton = (props: { name: string; id: number }): JSX.Element =>
   const { name, id } = props
   const classes = useStyles()
   const { questionNumber } = useParams<{ questionNumber: string }>()
-  const path = '/question/' + String(Number(questionNumber) + 1)
+  const githubPath = process.env.NODE_ENV === 'production' ? '/w-w' : ''
+  const path = githubPath + '/question/' + String(Number(questionNumber) + 1)
   const history = useHistory()
   const answerList = useRecoilValue(answerResultsState)
   const setResult = useSetRecoilState(resultEffectState)

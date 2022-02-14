@@ -14,8 +14,9 @@ const useStyles = makeStyles({
 const Home = (): JSX.Element => {
   const classes = useStyles()
   const history = useHistory()
+  const path = process.env.NODE_ENV === 'production' ? '/w-w' : ''
   const start = useCallback(() => {
-    history.push('/question/1')
+    history.push(path + '/question/1')
   }, [])
 
   return (
