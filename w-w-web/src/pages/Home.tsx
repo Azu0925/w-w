@@ -1,5 +1,7 @@
+import { Button } from '@chakra-ui/react'
 import React, { useCallback } from 'react'
 import { useHistory } from 'react-router'
+import './home.scss'
 
 const Home = (): JSX.Element => {
     const history = useHistory()
@@ -10,11 +12,17 @@ const Home = (): JSX.Element => {
 
     return (
         <main>
-            <p>
-                <img src={`${process.env.PUBLIC_URL}/icon.svg`} alt="w-w" />
-            </p>
-            <button onClick={start}>問題を開始する</button>
-            <p>全部で１０問</p>
+            <div className="top-content">
+                <div>
+                    <p id="icon-wrap">
+                        <img src={`${process.env.PUBLIC_URL}/icon.svg`} alt="w-w" id="home-icon" />
+                    </p>
+                    <p>スキマで暗記</p>
+                </div>
+            </div>
+            <Button background={'primary.main'} color={'primary.whiteText'} onClick={start}>
+                問題を開始する
+            </Button>
         </main>
     )
 }

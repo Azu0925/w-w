@@ -4,10 +4,15 @@ import './index.scss'
 import App from './App'
 import * as serviceWorkerRegistration from './serviceWorkerRegistration'
 import reportWebVitals from './reportWebVitals'
+import { ChakraProvider } from '@chakra-ui/react'
+import theme from './theme'
+import '@fontsource/noto-sans-jp/300.css'
 
 ReactDOM.render(
     <React.StrictMode>
-        <App />
+        <ChakraProvider theme={theme}>
+            <App />
+        </ChakraProvider>
     </React.StrictMode>,
     document.getElementById('root')
 )
