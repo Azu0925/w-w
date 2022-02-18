@@ -1,0 +1,22 @@
+@import '../../variables';
+
+#hamburger {
+    width: 45px;
+    height: 45px;
+    margin: 20px 0 0 auto;
+}
+
+#hamburger div {
+    width: 45px;
+    height: 5px;
+    background-color: $themeColor;
+}
+
+#hamburger div:nth-child(1) {
+    margin-top: 7px;
+    margin-bottom: 8px;
+}
+
+#hamburger div:nth-child(2) {
+    margin-bottom: 8px;
+}

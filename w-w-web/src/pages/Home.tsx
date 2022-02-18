@@ -2,6 +2,7 @@ import { Button } from '@chakra-ui/react'
 import React, { useCallback } from 'react'
 import { useHistory } from 'react-router'
 import './home.scss'
+import Header from '../components/headers/Header'
 
 const Home = (): JSX.Element => {
     const history = useHistory()
@@ -11,19 +12,32 @@ const Home = (): JSX.Element => {
     }, [])
 
     return (
-        <main>
-            <div className="top-content">
-                <div>
-                    <p id="icon-wrap">
-                        <img src={`${process.env.PUBLIC_URL}/icon.svg`} alt="w-w" id="home-icon" />
-                    </p>
-                    <p>スキマで暗記</p>
+        <>
+            <Header />
+            <main>
+                <div className="top-content">
+                    <div>
+                        <p id="icon-wrap">
+                            <img src={`${process.env.PUBLIC_URL}/icon.svg`} alt="w-w" id="home-icon" />
+                        </p>
+                        <p>スキマで暗記</p>
+                    </div>
                 </div>
-            </div>
-            <Button background={'primary.main'} color={'primary.whiteText'} onClick={start}>
-                問題を開始する
-            </Button>
-        </main>
+                <Button
+                    width="100%"
+                    height="60px"
+                    fontSize="1.5em"
+                    fontWeight="light"
+                    background={'primary.main'}
+                    color={'primary.whiteText'}
+                    _hover={{ bg: 'primary.sub' }}
+                    onClick={start}
+                    className="button"
+                >
+                    問題を開始する
+                </Button>
+            </main>
+        </>
     )
 }
 

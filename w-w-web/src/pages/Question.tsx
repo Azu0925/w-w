@@ -1,15 +1,19 @@
 import React, { Suspense } from 'react'
 import AnswerResult from '../components/AnswerResult'
+import Header from '../components/headers/Header'
 import QuestionForm from '../components/QuestionForm'
 
 const Question = (): JSX.Element => {
     return (
-        <main>
-            <Suspense fallback={<p>Loading...</p>}>
-                <QuestionForm />
-            </Suspense>
-            <AnswerResult />
-        </main>
+        <>
+            <Header />
+            <main>
+                <Suspense fallback={<p>Loading...</p>}>
+                    <QuestionForm />
+                </Suspense>
+                <AnswerResult />
+            </main>
+        </>
     )
 }
 
