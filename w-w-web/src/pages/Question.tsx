@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
-import AnswerResult from '../components/AnswerResult'
 import Header from '../components/headers/Header'
 import QuestionForm from '../components/QuestionForm'
+import './question.scss'
 
 const Question = (): JSX.Element => {
     return (
@@ -11,7 +11,6 @@ const Question = (): JSX.Element => {
                 <Suspense fallback={<p>Loading...</p>}>
                     <QuestionForm />
                 </Suspense>
-                <AnswerResult />
             </main>
         </>
     )

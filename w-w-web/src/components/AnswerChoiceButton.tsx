@@ -1,3 +1,4 @@
+import { Button } from '@chakra-ui/react'
 import React from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import { useRecoilValue, useRecoilRefresher_UNSTABLE, useSetRecoilState } from 'recoil'
@@ -28,7 +29,22 @@ const AnswerChoiceButton = (props: { name: string; id: number }): JSX.Element =>
         refreshQuestion()
     }
 
-    return <button onClick={handleChangeSelect}>{name}</button>
+    return (
+        <Button
+            width="100%"
+            height="60px"
+            marginBottom="20px"
+            fontSize="1.5em"
+            fontWeight="light"
+            justifyContent="flex-start"
+            background={'primary.main'}
+            color={'primary.whiteText'}
+            _hover={{ bg: 'primary.sub' }}
+            onClick={handleChangeSelect}
+        >
+            {name}
+        </Button>
+    )
 }
 
 export default AnswerChoiceButton

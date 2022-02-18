@@ -20,7 +20,7 @@ const Home = (): JSX.Element => {
                         <p id="icon-wrap">
                             <img src={`${process.env.PUBLIC_URL}/icon.svg`} alt="w-w" id="home-icon" />
                         </p>
-                        <p>スキマで暗記</p>
+                        <p id="sub-title">スキマで暗記</p>
                     </div>
                 </div>
                 <Button
