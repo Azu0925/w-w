@@ -14,6 +14,7 @@ const AnswerChoiceButton = (props: { name: string; id: number }): JSX.Element =>
         answerList[0].answerNumber === id ? setResult(true) : setResult(false)
         setIsAnswerd(true)
     }
+    console.log(`state ${isAnswered}`)
 
     return (
         <Button

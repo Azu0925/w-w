@@ -4,7 +4,9 @@ p#sub-title {
 
 main {
     width: 90%;
+    height: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 #home-icon {
@@ -18,6 +20,7 @@ main {
 
 .top-content {
     height: 50vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,0 +1,94 @@
+@import '../../variables';
+
+.menu-list {
+    display: none;
+}
+
+.active {
+    animation: open-side-menu 1s;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+.active li {
+    width: 100%;
+    height: 70px;
+    font-size: 1.7em;
+    border-bottom: solid 1px $secondColor;
+}
+
+.active li p {
+    width: calc(100% - 20px);
+    height: 60px;
+    padding: 5px;
+    display: flex;
+}
+
+.active li p a {
+    width: 100%;
+    height: 60px;
+    display: block;
+    line-height: 60px;
+}
+
+.passive {
+    animation: close-side-menu 1s;
+    animation-fill-mode: forwards;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+.passive li {
+    width: 100%;
+    height: 70px;
+    font-size: 1.7em;
+    border-bottom: solid 1px $secondColor;
+}
+
+.passive li p {
+    width: calc(100% - 20px);
+    height: 60px;
+    padding: 5px;
+    display: flex;
+}
+
+.passive li p a {
+    width: 100%;
+    height: 60px;
+    display: block;
+    line-height: 60px;
+}
+
+@keyframes open-side-menu {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: transalateX(0);
+    }
+}
+
+@keyframes close-side-menu {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+        display: block;
+    }
+    100% {
+        transform: translateX(1000px);
+        opacity: 0;
+        display: block;
+    }
+}
