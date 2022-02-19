@@ -34,7 +34,7 @@ const MenuList = (): JSX.Element => {
                 </li>
                 <li>
                     <p>
-                        <a>REASULT</a>
+                        <a>RESULT</a>
                     </p>
                 </li>
                 <li></li>
