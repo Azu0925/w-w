@@ -1,14 +1,25 @@
 @import '../variables';
 
 #result {
+    height: 30vh;
 }
 
-#result p {
+#result > p {
     text-align: center;
+    color: $linkColor;
+    font-weight: normal;
 }
 
-h3#result-text-true {
+#result-text-true {
     color: $trueColor;
     font-size: 1.5em;
     text-align: center;
+    margin-bottom: 35px;
+}
+
+#result-text-false {
+    color: $falseColor;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 35px;
 }
