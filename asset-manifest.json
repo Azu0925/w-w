@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.fc1c47f1.chunk.css",
-    "main.js": "./static/js/main.0531945d.chunk.js",
-    "runtime-main.js": "./static/js/runtime-main.0d8d78b1.js",
+    "main.css": "./static/css/main.80cc13cf.chunk.css",
+    "main.js": "./static/js/main.393b4a1a.chunk.js",
+    "runtime-main.js": "./static/js/runtime-main.52767dd5.js",
     "static/css/2.fa078b57.chunk.css": "./static/css/2.fa078b57.chunk.css",
-    "static/js/2.90ca3504.chunk.js": "./static/js/2.90ca3504.chunk.js",
-    "static/js/3.b2c1b0e3.chunk.js": "./static/js/3.b2c1b0e3.chunk.js",
+    "static/js/2.52e4b55f.chunk.js": "./static/js/2.52e4b55f.chunk.js",
+    "static/js/3.45c39670.chunk.js": "./static/js/3.45c39670.chunk.js",
     "index.html": "./index.html",
     "service-worker.js": "./service-worker.js",
-    "static/js/2.90ca3504.chunk.js.LICENSE.txt": "./static/js/2.90ca3504.chunk.js.LICENSE.txt",
+    "static/js/2.52e4b55f.chunk.js.LICENSE.txt": "./static/js/2.52e4b55f.chunk.js.LICENSE.txt",
     "static/media/300.css": "./static/media/noto-sans-jp-all-300-normal.5bb1d6b9.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d8d78b1.js",
+    "static/js/runtime-main.52767dd5.js",
     "static/css/2.fa078b57.chunk.css",
-    "static/js/2.90ca3504.chunk.js",
-    "static/css/main.fc1c47f1.chunk.css",
-    "static/js/main.0531945d.chunk.js"
+    "static/js/2.52e4b55f.chunk.js",
+    "static/css/main.80cc13cf.chunk.css",
+    "static/js/main.393b4a1a.chunk.js"
   ]
 }
