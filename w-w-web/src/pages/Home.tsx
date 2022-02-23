@@ -2,8 +2,6 @@ import { Button } from '@chakra-ui/react'
 import React, { useCallback } from 'react'
 import { useHistory } from 'react-router'
 import './home.scss'
-import Header from '../components/headers/Header'
-import MenuList from '../components/headers/MenuList'
 
 const Home = (): JSX.Element => {
     const history = useHistory()
