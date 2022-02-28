@@ -1,10 +1,11 @@
 #question {
-    height: 40vh;
+    height: calc(100vh - 420px);
+    max-height: 40vh;
 }
 
 #question > p {
     font-size: 1.5em;
-    margin-top: 45px;
+    margin-top: 35px;
     margin-bottom: 35px;
 }
 
